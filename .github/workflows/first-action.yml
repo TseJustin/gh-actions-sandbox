@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Create repo variable
-        run:
+        run: |
           curl -L \
             -X POST \
             -H "Accept: application/vnd.github+json" \
