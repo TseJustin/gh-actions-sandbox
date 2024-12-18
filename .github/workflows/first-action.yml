@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   first-job:
+    permissions: write-all
     runs-on: ubuntu-latest 
     steps:
       - name: Checkout code
