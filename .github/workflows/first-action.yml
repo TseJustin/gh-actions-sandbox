@@ -15,7 +15,7 @@ jobs:
         run: echo "DATE=FOO" >> $GITHUB_ENV
 
       - name: Print stuff
-        run: echo ${{ vars.$(env.DATE) }}
+        run: echo ${{ vars[env.DATE] }}
       # - name: Create repo variable
       #   run: |
       #     curl -L \
