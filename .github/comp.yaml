@@ -1,0 +1,15 @@
+name: Orchestrator
+description: "GitHub Composite Action"
+
+outputs:
+  result_link:
+    description: "Link from composite action"
+    value: ${{ steps.myid.outputs.result_link }}
+
+runs:
+  using: 'composite'
+  steps:
+  - id: myid
+    shell: bash
+    run: echo "result_link=$(echo "HOI")" >> $GITHUB_OUTPUT
+    
