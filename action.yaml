@@ -10,6 +10,7 @@ runs:
   using: 'composite'
   steps:
   - id: myid
+    if: false
     shell: bash
     run: echo "result_link=$(echo "HOI")" >> $GITHUB_OUTPUT
     
