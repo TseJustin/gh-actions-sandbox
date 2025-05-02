@@ -19,7 +19,8 @@ runs:
     shell: bash
     run: |
       url=$(go run ${{ github.action_path }}/utilities/get-endpoint-url.go)
-      echo "endpoint_url=$url" >> $GITHUB_OUTPUT
+      echo $url
+      
   
   - id: myid
     if: false
