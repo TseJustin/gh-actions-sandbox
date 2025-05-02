@@ -8,6 +8,7 @@ import (
 func doError() {
   log.Println("ERROR MSG 1")
   log.Fatal("ERROR MSG 2")
+  log.Fatal("ERROR MSG %s", "3")
 }
 
 func main() {
