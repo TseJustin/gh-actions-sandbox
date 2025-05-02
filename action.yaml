@@ -18,7 +18,7 @@ runs:
   - name:
     shell: bash
     run: |
-      url=$(go run ${{ github.action_path }}/utilities/get-endpoint-url.go)
+      url=$(go run ${{ github.action_path }}/get-endpoint-url.go)
       echo $url
       
   
