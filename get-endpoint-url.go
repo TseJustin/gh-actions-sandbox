@@ -6,9 +6,8 @@ import (
 )
 
 func doError() {
-  err := "ERROR MESSAGE"
-  log.Println(err)
-  log.Fatal(err)
+  log.Println("ERROR MSG 1")
+  log.Fatal("ERROR MSG 2")
 }
 
 func main() {
