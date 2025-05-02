@@ -13,5 +13,6 @@ func doError() {
 
 func main() {
   url := "final-url"
+  doError()
   fmt.Printf(url)
 }
