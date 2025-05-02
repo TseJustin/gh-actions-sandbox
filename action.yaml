@@ -9,6 +9,18 @@ outputs:
 runs:
   using: 'composite'
   steps:
+
+  - name: Setup Go
+    uses: actions/setup-go@v5
+    with:
+      go-version: '1.23.4'
+
+  - name:
+    shell: bash
+    run: |
+      url=$(go run ${{ github.action_path }}/utilities/get-endpoint-url.go)
+      echo "endpoint_url=$url" >> $GITHUB_OUTPUT
+  
   - id: myid
     if: false
     shell: bash
